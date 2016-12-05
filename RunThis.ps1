@@ -18,5 +18,7 @@ if (Test-Path $testResults)
 #execute test
 & $vstest $dllFile /Logger:trx
 
+$testFile = Get-ChildItem -Path "$testResults\*" -Include "*.trx" 
+
 #generate report
-& $pickles /documentation-format=DHtml /feature-directory=$featureDir /output-directory=$outputDir /TestResultsFile=$testResults /test-results-format=vstest
+& $pickles /documentation-format=DHtml /feature-directory=$featureDir /output-directory=$outputDir /link-results-file=$testFile /test-results-format=vstest
