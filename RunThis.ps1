@@ -16,7 +16,7 @@ if (Test-Path $testResults)
 }
 
 #execute test
-& $vstest $dllFile /Logger:trx
+& $vstest $dllFile /TestCaseFilter:"TestCategory=mytest" /Logger:trx
 
 $testFile = Get-ChildItem -Path "$testResults\*" -Include "*.trx" 
 

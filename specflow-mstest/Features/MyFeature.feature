@@ -3,6 +3,7 @@
 	As a math idiot
 	I want to be told the sum of two numbers
 
+@ignore
 Scenario Outline: Add two numbers
 	Given I have entered <a> into the calculator
 	And I have entered <b> into the calculator
@@ -13,6 +14,7 @@ Scenario Outline: Add two numbers
 	| a | b | c |
 	| 1 | 2 | 3 |
 
+@mytest
 Scenario: Test it
 	Given I have this
 	When I do this
