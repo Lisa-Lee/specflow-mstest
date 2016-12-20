@@ -1,6 +1,6 @@
 $vstest = "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\CommonExtensions\Microsoft\TestWindow\vstest.console.exe"
 $dllFile = "specflow-mstest\bin\Debug\specflow-mstest.dll"
-$pickles = "packages\Pickles.CommandLine.2.10.0\tools\pickles"
+$pickles = "packages\Pickles.CommandLine.2.11.1\tools\pickles"
 $featureDir = "specflow-mstest\Features"
 $outputDir = "GeneratedDocs"
 $testResults = "TestResults"
