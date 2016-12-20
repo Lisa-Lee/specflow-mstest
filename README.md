@@ -17,3 +17,6 @@ Scenario: Add two numbers
 	#| aa | bb | cc |
 	#| 1  | 2  | 3  |
 ```
+
+Update:
+This issue has been fixed with Pickles.CommandLine.2.11.1
